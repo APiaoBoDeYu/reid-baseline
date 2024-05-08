@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": [
+                "--config_file", "configs/softmax_triplet_with_center.yml",
+                "MODEL.DEVICE_ID", "market1501",
+                "DATASETS.NAMES", "1",
+                "DATASETS.ROOT_DIR", "/root/workspace/reid/code/reid-strong-baseline-master/data",
+                "MODEL.PRETRAIN_CHOICE", "self",
+                "MODEL.PRETRAIN_PATH", "/root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth",
+                "OUTPUT_DIR","/root/workspace/reid/code/reid-strong-baseline-master/output"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}

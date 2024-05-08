@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "current file",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+
+        
+
+        
+        
+        {
+            "name": "train.py",
+            "type": "python",
+            "request": "launch",
+            "program": "/root/workspace/reid/code/reid-strong-baseline-master/tools/train.py",
+            "args": [
+                "--config_file", "configs/softmax_triplet_with_center.yml"
+                // ,
+                // "MODEL.DEVICE_ID", "1",
+                // "DATASETS.NAMES", "market1501",
+                // "DATASETS.ROOT_DIR", "/root/workspace/reid/code/reid-strong-baseline-master/data",
+                // "MODEL.PRETRAIN_CHOICE", "self",
+                // "MODEL.PRETRAIN_PATH", "/root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth",
+                // "OUTPUT_DIR","/root/workspace/reid/code/reid-strong-baseline-master/output"
+            ],
+            //环境变量
+            "env": {
+                "CUDA_VISIBLE_DEVICES":"3"
+            },
+            "console": "integratedTerminal"
+        }
+    ]
+}
